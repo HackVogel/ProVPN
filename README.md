@@ -4,7 +4,7 @@
 ProVPN is a simple structured AntiVPN Minecraft Spigot plugin that prevents players from joining your server through a virtual proxy/VPN!
 
 ### SUPPORTED VERSIONS
-Spigot (+ Forks): 1.8x - 1.20x (latest)
+Spigot (+ Forks): 1.8x - 26.1x (latest)
 Bungeecord (+ Forks)
 
 ### WHY THIS PLUGIN?
