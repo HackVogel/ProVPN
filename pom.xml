@@ -9,8 +9,10 @@
     <version>1.1.4</version>
 
     <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
+        <!-- Paper 26.x erfordert zwingend Java 25 -->
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
     <build>
@@ -18,6 +20,11 @@
     </build>
 
     <repositories>
+        <!-- Das Paper-Repo, was dir beim ersten Versuch fehlte -->
+        <repository>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
         <repository>
             <id>spigot-repo</id>
             <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
@@ -30,9 +37,10 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.spigotmc</groupId>
-            <artifactId>spigot-api</artifactId>
-            <version>1.20-R0.1-SNAPSHOT</version>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <!-- MIT den Klammern, da es eine Maven-Range ist! -->
+            <version>[26.1.2.build,)</version>
             <scope>provided</scope>
         </dependency>
 
@@ -46,8 +54,7 @@
         <dependency>
             <groupId>net.md-5</groupId>
             <artifactId>bungeecord-api</artifactId>
-            <version>1.20-R0.1-SNAPSHOT</version>
-            <type>jar</type>
+            <version>1.21-R0.4</version>
             <scope>provided</scope>
         </dependency>
 

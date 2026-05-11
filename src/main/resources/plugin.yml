@@ -1,7 +1,7 @@
 name: ProVPN
 version: 1.1.4
 main: de.rayzs.provpn.plugin.loader.ProVPNBukkitLoader
-api-version: 1.13
+api-version: 26.1
 author: Rayzs_YT
 load: STARTUP
 description: Protection against VPN & virtual proxies!
